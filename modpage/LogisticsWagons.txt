@@ -1,0 +1,15 @@
+This mod adds new train wagons that can be used by the robotic logistic network.  It includes a wagon to reflect each of the four base game logistics chests (storage, passive provide, active provider and requester) using the same basic colour scheme.
+
+Changes from original mod:
++ Massive code update and simplification (removed all the "middle class" and oop nonsense).
++ Mod settings to control the behaviour and how entities and recipes are created.
++ Mod settings to allow modifying the base game cargo and fluid wagons to maintain consistency with "big chest/storage tank" mods.
+
+Known issues:
++ The requester wagon must be stopped before you can set it's filters.
+
+Credit where it's due:
++ This is an updated version of gnzzz's Logistics Wagons (released under the MIT license) which can be found here: https://github.com/gnzzz/Factorio-Logistics-Wagons
+
+TODO:
++ Replace the sprites with something better looking, no offense gnzzz. ;)
