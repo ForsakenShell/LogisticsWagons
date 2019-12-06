@@ -1,4 +1,4 @@
-This mod adds new train wagons that can be used by the robotic logistic network.  It includes a wagon to reflect each of the four base game logistics chests (storage, passive provide, active provider and requester) using the same basic colour scheme.
+This mod adds new train wagons that can be used by the robotic logistic network.  It includes a wagon to reflect each of the four base game logistics chests (storage, passive provide, active provider and, requester) using the same basic colour scheme.
 
 Changes from original mod:
 + Massive code update and simplification (removed all the "middle class" and oop nonsense).
