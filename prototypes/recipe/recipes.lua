@@ -136,5 +136,6 @@ end
 make_logistics_wagon_recipes( "lw-cargo-wagon-passive"  , "logistic-chest-passive-provider" )
 make_logistics_wagon_recipes( "lw-cargo-wagon-active"   , "logistic-chest-active-provider"  )
 make_logistics_wagon_recipes( "lw-cargo-wagon-storage"  , "logistic-chest-storage"          )
+make_logistics_wagon_recipes( "lw-cargo-wagon-buffer"   , "logistic-chest-buffer"           )
 make_logistics_wagon_recipes( "lw-cargo-wagon-requester", "logistic-chest-requester"        )
 adjust_vanilla_wagon_recipes()

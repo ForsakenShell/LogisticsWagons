@@ -132,4 +132,5 @@ make_logistics_wagon_entities( "lw-cargo-wagon-passive"  , "lw-logistic-chest-pa
 make_logistics_wagon_entities( "lw-cargo-wagon-active"   , "lw-logistic-chest-active-provider-trans" , "wagon-active-provider" , "logistic-chest-active-provider"  ) 
 make_logistics_wagon_entities( "lw-cargo-wagon-requester", "lw-logistic-chest-requester-trans"       , "wagon-requester"       , "logistic-chest-requester"        ) 
 make_logistics_wagon_entities( "lw-cargo-wagon-storage"  , "lw-logistic-chest-storage-provider-trans", "wagon-storage"         , "logistic-chest-storage"          ) 
+make_logistics_wagon_entities( "lw-cargo-wagon-buffer"   , "lw-logistic-chest-buffer-provider-trans" , "wagon-buffer"          , "logistic-chest-buffer"          ) 
 adjust_vanilla_wagon_entities()

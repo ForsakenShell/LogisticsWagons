@@ -64,6 +64,8 @@ function get_proxy_name( name )
         return "lw-logistic-chest-requester-trans"
     elseif( name == "lw-cargo-wagon-storage" )then
         return "lw-logistic-chest-storage-provider-trans"
+    elseif( name == "lw-cargo-wagon-buffer" )then
+        return "lw-logistic-chest-buffer-provider-trans"
     end
     return nil
 end

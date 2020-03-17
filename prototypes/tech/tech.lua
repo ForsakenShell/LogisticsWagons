@@ -36,6 +36,7 @@ data:extend(
             {
                 { type = "unlock-recipe", recipe = "lw-cargo-wagon-active"    },
                 { type = "unlock-recipe", recipe = "lw-cargo-wagon-requester" },
+                { type = "unlock-recipe", recipe = "lw-cargo-wagon-buffer" },
             },
             prerequisites = { "lw-logistic-wagons", "logistic-system" },
             unit =
