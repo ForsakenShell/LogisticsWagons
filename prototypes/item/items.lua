@@ -21,3 +21,4 @@ make_logistics_wagon_items( "lw-cargo-wagon-passive"  , "wagon-passive-provider"
 make_logistics_wagon_items( "lw-cargo-wagon-active"   , "wagon-active-provider"  )
 make_logistics_wagon_items( "lw-cargo-wagon-requester", "wagon-requester"        )
 make_logistics_wagon_items( "lw-cargo-wagon-storage"  , "wagon-storage"          )
+make_logistics_wagon_items( "lw-cargo-wagon-buffer"   , "wagon-buffer"           )

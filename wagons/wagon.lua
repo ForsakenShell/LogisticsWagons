@@ -53,7 +53,7 @@ function wagon_on_gui_opened( wagon, event )
     if( event.gui_type ~= defines.gui_type.entity )or( wagon.proxy == nil )then
         return
     end
-    if( wagon.proxy.prototype.logistic_mode ~= "requester" )then
+    if( wagon.proxy.prototype.logistic_mode ~= "requester" )and( wagon.proxy.prototype.logistic_mode ~= "buffer" )then
         return
     end
     debugLog( 2, "wagon_on_gui_opened() :: event = " .. serpent.dump( event ) .. " :: wagon = " .. serpent.dump( wagon ) )
@@ -79,7 +79,7 @@ function wagon_create_proxy( wagon )
     wagon.proxy = wagon.entity.surface.create_entity{ name = wagon.proxy_name, position = proxyPosition, force = wagon.entity.force, raise_built = false }
     wagon.wagon_count = -1
     wagon.proxy_count = -1
-    if( wagon.proxy.prototype.logistic_mode == "requester" )then
+    if( wagon.proxy.prototype.logistic_mode == "requester" )or( wagon.proxy.prototype.logistic_mode == "buffer" )then
         local slotCount = wagon.proxy.request_slot_count or 0
         if( slotCount > 0 )and( wagon.request_slots ~= nil )then
             for i = 1, slotCount do
@@ -116,7 +116,7 @@ function wagon_sync_filters( wagon )
     local wagonBar = wagonInventory.getbar()
     local proxyBar = proxyInventory.getbar()
     if( wagonBar ~= proxyBar )then
-        if( wagon.proxy.prototype.logistic_mode == "requester" )then
+        if( wagon.proxy.prototype.logistic_mode == "requester" )or( wagon.proxy.prototype.logistic_mode == "buffer" )then
             wagonInventory.setbar( proxyBar )
         else
             proxyInventory.setbar( wagonBar )
@@ -124,7 +124,7 @@ function wagon_sync_filters( wagon )
     end
     
     -- Sync the request slots
-    if( wagon.proxy.prototype.logistic_mode == "requester" )then
+    if( wagon.proxy.prototype.logistic_mode == "requester" )or( wagon.proxy.prototype.logistic_mode == "buffer" )then
         local slotCount = wagon.proxy.request_slot_count or 0
         if( slotCount > 0 )then
             local wagonSlots = {}
