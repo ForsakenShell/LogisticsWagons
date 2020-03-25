@@ -20,7 +20,7 @@ function on_tick( event )
 end
 
 function on_built_entity( event )
-    local entity = event.created_entity
+    local entity = event.created_entity or event.entity
     local proxy_name = get_proxy_name( entity.name )
     if( proxy_name ~= nil )then
         debugLog( 1, "on_built_entity() :: entity = " .. event.name .. " :: proxy = " .. proxy_name )
